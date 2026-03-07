@@ -1,0 +1,14 @@
+{
+  "name": "another-world-simulator",
+  "version": "1.0.0",
+  "description": "TCG Simulator inspired by Another World Store",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "python3 server/index.py",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

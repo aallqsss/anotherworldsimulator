@@ -1,0 +1,4 @@
+INFO  2026-02-14T16:06:34 +366ms service=default version=1.2.1 args=[] opencode
+INFO  2026-02-14T16:06:34 +3ms service=config path=/home/chier/.config/opencode/config.json loading
+INFO  2026-02-14T16:06:34 +2ms service=config path=/home/chier/.config/opencode/opencode.json loading
+INFO  2026-02-14T16:06:34 +1ms service=config path=/home/chier/.config/opencode/opencode.jsonc loading

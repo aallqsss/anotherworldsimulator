@@ -1,0 +1,99 @@
+INFO  2026-03-06T14:50:09 +141ms service=server method=GET path=/event request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/event request
+INFO  2026-03-06T14:50:09 +1ms service=default directory=/home/chier creating instance
+INFO  2026-03-06T14:50:09 +0ms service=project directory=/home/chier fromDirectory
+INFO  2026-03-06T14:50:09 +1ms service=server method=GET path=/session request
+INFO  2026-03-06T14:50:09 +1ms service=server status=started method=GET path=/session request
+INFO  2026-03-06T14:50:09 +0ms service=server method=GET path=/config/providers request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-03-06T14:50:09 +0ms service=server method=GET path=/provider request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-03-06T14:50:09 +0ms service=server method=GET path=/agent request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-03-06T14:50:09 +0ms service=server method=GET path=/config request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/config request
+INFO  2026-03-06T14:50:09 +34ms service=db path=/home/chier/.local/share/opencode/opencode.db opening database
+INFO  2026-03-06T14:50:09 +12ms service=db count=3 mode=bundled applying migrations
+INFO  2026-03-06T14:50:09 +12ms service=default directory=/home/chier bootstrapping
+INFO  2026-03-06T14:50:09 +7ms service=config path=/home/chier/.config/opencode/config.json loading
+INFO  2026-03-06T14:50:09 +6ms service=config path=/home/chier/.config/opencode/opencode.json loading
+INFO  2026-03-06T14:50:09 +1ms service=config path=/home/chier/.config/opencode/opencode.jsonc loading
+INFO  2026-03-06T14:50:09 +8ms service=config path=/home/chier/.opencode/opencode.jsonc loading
+INFO  2026-03-06T14:50:09 +0ms service=config path=/home/chier/.opencode/opencode.json loading
+INFO  2026-03-06T14:50:09 +14ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-03-06T14:50:09 +0ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-03-06T14:50:09 +0ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-03-06T14:50:09 +0ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-03-06T14:50:09 +88ms service=bus type=* subscribing
+INFO  2026-03-06T14:50:09 +0ms service=bus type=session.updated subscribing
+INFO  2026-03-06T14:50:09 +0ms service=bus type=message.updated subscribing
+INFO  2026-03-06T14:50:09 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-03-06T14:50:09 +0ms service=bus type=session.diff subscribing
+INFO  2026-03-06T14:50:09 +1ms service=format init
+INFO  2026-03-06T14:50:09 +0ms service=bus type=file.edited subscribing
+INFO  2026-03-06T14:50:09 +0ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server enabled LSP servers
+INFO  2026-03-06T14:50:09 +3ms service=scheduler id=snapshot.cleanup run
+INFO  2026-03-06T14:50:09 +0ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-03-06T14:50:09 +1ms service=bus type=command.executed subscribing
+INFO  2026-03-06T14:50:09 +3ms service=server event connected
+INFO  2026-03-06T14:50:09 +4ms service=bus type=* subscribing
+INFO  2026-03-06T14:50:09 +2ms service=server status=started providers
+INFO  2026-03-06T14:50:09 +3ms service=provider status=started state
+INFO  2026-03-06T14:50:09 +9ms service=server status=completed duration=211 method=GET path=/event request
+INFO  2026-03-06T14:50:09 +1ms service=server status=completed duration=209 method=GET path=/config request
+INFO  2026-03-06T14:50:09 +2ms service=server status=completed duration=212 method=GET path=/session request
+INFO  2026-03-06T14:50:09 +26ms service=provider init
+INFO  2026-03-06T14:50:09 +9ms service=provider providerID=opencode found
+INFO  2026-03-06T14:50:09 +1ms service=provider status=completed duration=48 state
+INFO  2026-03-06T14:50:09 +38ms service=server status=completed duration=89 providers
+INFO  2026-03-06T14:50:09 +4ms service=server status=completed duration=289 method=GET path=/provider request
+INFO  2026-03-06T14:50:09 +0ms service=server status=completed duration=289 method=GET path=/config/providers request
+INFO  2026-03-06T14:50:09 +8ms service=server status=completed duration=297 method=GET path=/agent request
+INFO  2026-03-06T14:50:09 +77ms service=server method=GET path=/command request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/command request
+INFO  2026-03-06T14:50:09 +1ms service=server status=completed duration=1 method=GET path=/command request
+INFO  2026-03-06T14:50:09 +1ms service=server method=GET path=/lsp request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/lsp request
+INFO  2026-03-06T14:50:09 +0ms service=server status=completed duration=0 method=GET path=/lsp request
+INFO  2026-03-06T14:50:09 +1ms service=server method=GET path=/mcp request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-03-06T14:50:09 +0ms service=server status=completed duration=0 method=GET path=/mcp request
+INFO  2026-03-06T14:50:09 +1ms service=server method=GET path=/experimental/resource request
+INFO  2026-03-06T14:50:09 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-03-06T14:50:09 +0ms service=server status=completed duration=0 method=GET path=/experimental/resource request
+INFO  2026-03-06T14:50:09 +0ms service=server method=GET path=/formatter request
+INFO  2026-03-06T14:50:09 +1ms service=server status=started method=GET path=/formatter request
+INFO  2026-03-06T14:50:10 +629ms service=server method=GET path=/session/status request
+INFO  2026-03-06T14:50:10 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-03-06T14:50:10 +1ms service=server status=completed duration=1 method=GET path=/session/status request
+INFO  2026-03-06T14:50:10 +1ms service=server method=GET path=/provider/auth request
+INFO  2026-03-06T14:50:10 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-03-06T14:50:10 +1ms service=server status=completed duration=1 method=GET path=/provider/auth request
+INFO  2026-03-06T14:50:10 +1ms service=server method=GET path=/vcs request
+INFO  2026-03-06T14:50:10 +0ms service=server status=started method=GET path=/vcs request
+INFO  2026-03-06T14:50:10 +0ms service=server status=completed duration=0 method=GET path=/vcs request
+INFO  2026-03-06T14:50:10 +0ms service=server method=GET path=/path request
+INFO  2026-03-06T14:50:10 +1ms service=server status=started method=GET path=/path request
+INFO  2026-03-06T14:50:10 +0ms service=server status=completed duration=0 method=GET path=/path request
+INFO  2026-03-06T14:50:10 +707ms service=server status=completed duration=1341 method=GET path=/formatter request
+INFO  2026-03-06T14:50:26 +15453ms service=installation method=curl target=1.2.20 stdout=[0m[0;2mInstalled version: [0m1.2.1.[0m
+[0m
+[0;2mInstalling [0mopencode [0;2mversion: [0m1.2.20[0m
+
+[0;2m                    [0m             ▄     
+[0;2m█▀▀█ █▀▀█ █▀▀█ █▀▀▄ [0m█▀▀▀ █▀▀█ █▀▀█ █▀▀█
+[0;2m█░░█ █░░█ █▀▀▀ █░░█ [0m█░░░ █░░█ █░░█ █▀▀▀
+[0;2m▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ [0m▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀
+
+
+[0;2mOpenCode includes free models, to start:[0m
+
+cd <project>  [0;2m# Open directory[0m
+opencode      [0;2m# Run command[0m
+
+[0;2mFor more information visit [0mhttps://opencode.ai/docs
+
+
+ stderr=#=#=#                                                                          ##O#-#                                                                         ##O=#  #                                                                       #=#=-#  #                                                                                                                                                 0.0%                                                                           0.3%                                                                           1.0%#                                                                          1.5%#                                                                          2.1%##                                                                         2.8%##                                                                         3.5%###                                                                        4.3%###                                                                        5.2%####                                                                       6.2%#####                                                                      7.2%#####                                                                      8.3%######                                                                     9.5%#######                                                                   10.7%########                                                                  11.8%#########                                                                 13.0%##########                                                                14.2%###########                                                               15.5%###########                                                               16.7%############                                                              17.9%#############                                                             19.1%##############                                                            20.3%###############                                                           21.5%################                                                          22.8%#################                                                         24.0%##################                                                        25.2%###################                                                       26.4%###################                                                       27.6%####################                                                      28.7%#####################                                                     29.8%######################                                                    31.2%#######################                                                   32.4%########################                                                  33.5%########################                                                  34.7%#########################                                                 36.0%##########################                                                37.2%###########################                                               38.6%############################                                              39.7%#############################                                             41.0%##############################                                            42.2%###############################                                           43.5%################################                                          44.6%#################################                                         46.0%#################################                                         46.7%##################################                                        47.5%##################################                                        48.5%###################################                                       49.2%####################################                                      50.1%####################################                                      50.9%#####################################                                     51.6%#####################################                                     52.5%######################################                                    52.9%#######################################                                   54.3%#######################################                                   54.9%#######################################                                   55.5%########################################                                  56.3%#########################################                                 57.1%#########################################                                 57.7%##########################################                                58.8%###########################################                               59.7%###########################################                               60.2%############################################                              61.3%############################################                              62.0%#############################################                             62.8%#############################################                             63.6%##############################################                            64.2%##############################################                            65.0%###############################################                           65.8%###############################################                           66.6%################################################                          67.3%################################################                          68.0%#################################################                         68.8%#################################################                         69.4%##################################################                        70.6%###################################################                       71.2%###################################################                       71.8%####################################################                      72.5%####################################################                      73.1%#####################################################                     73.8%#####################################################                     74.5%#####################################################                     75.0%######################################################                    75.6%######################################################                    76.2%#######################################################                   76.7%#######################################################                   77.4%########################################################                  78.1%########################################################                  78.7%#########################################################                 79.4%#########################################################                 80.1%##########################################################                80.8%##########################################################                81.5%###########################################################               82.2%###########################################################               82.9%############################################################              83.7%############################################################              84.4%#############################################################             85.2%#############################################################             85.9%##############################################################            86.6%##############################################################            87.4%###############################################################           88.1%###############################################################           88.8%################################################################          89.6%#################################################################         90.4%#################################################################         91.2%##################################################################        92.0%##################################################################        92.9%###################################################################       93.8%####################################################################      94.5%####################################################################      95.3%#####################################################################     96.0%#####################################################################     96.9%######################################################################    97.8%######################################################################    98.5%#######################################################################   99.2%######################################################################## 100.0%
+ upgraded
+INFO  2026-03-06T14:50:27 +826ms service=bus type=installation.updated publishing

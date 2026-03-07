@@ -1,0 +1,702 @@
+INFO  2026-02-14T15:22:01 +146ms service=server method=GET path=/event request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/event request
+INFO  2026-02-14T15:22:01 +1ms service=default directory=/home/chier creating instance
+INFO  2026-02-14T15:22:01 +0ms service=project directory=/home/chier fromDirectory
+INFO  2026-02-14T15:22:01 +2ms service=server method=GET path=/session request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/session request
+INFO  2026-02-14T15:22:01 +0ms service=server method=GET path=/config/providers request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-02-14T15:22:01 +0ms service=server method=GET path=/provider request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-02-14T15:22:01 +0ms service=server method=GET path=/agent request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-02-14T15:22:01 +0ms service=server method=GET path=/config request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/config request
+INFO  2026-02-14T15:22:01 +20ms service=db path=/home/chier/.local/share/opencode/opencode.db opening database
+INFO  2026-02-14T15:22:01 +2ms service=db count=3 mode=bundled applying migrations
+INFO  2026-02-14T15:22:01 +9ms service=default directory=/home/chier bootstrapping
+INFO  2026-02-14T15:22:01 +8ms service=config path=/home/chier/.config/opencode/config.json loading
+INFO  2026-02-14T15:22:01 +0ms service=config path=/home/chier/.config/opencode/opencode.json loading
+INFO  2026-02-14T15:22:01 +1ms service=config path=/home/chier/.config/opencode/opencode.jsonc loading
+INFO  2026-02-14T15:22:01 +6ms service=config path=/home/chier/.opencode/opencode.jsonc loading
+INFO  2026-02-14T15:22:01 +1ms service=config path=/home/chier/.opencode/opencode.json loading
+INFO  2026-02-14T15:22:01 +5ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-02-14T15:22:01 +1ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-02-14T15:22:01 +0ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-02-14T15:22:01 +0ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-02-14T15:22:01 +22ms service=bus type=* subscribing
+INFO  2026-02-14T15:22:01 +1ms service=bus type=session.updated subscribing
+INFO  2026-02-14T15:22:01 +0ms service=bus type=message.updated subscribing
+INFO  2026-02-14T15:22:01 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-02-14T15:22:01 +0ms service=bus type=session.diff subscribing
+INFO  2026-02-14T15:22:01 +0ms service=format init
+INFO  2026-02-14T15:22:01 +0ms service=bus type=file.edited subscribing
+INFO  2026-02-14T15:22:01 +0ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server enabled LSP servers
+INFO  2026-02-14T15:22:01 +3ms service=scheduler id=snapshot.cleanup run
+INFO  2026-02-14T15:22:01 +0ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-02-14T15:22:01 +0ms service=bus type=command.executed subscribing
+INFO  2026-02-14T15:22:01 +2ms service=server event connected
+INFO  2026-02-14T15:22:01 +2ms service=bus type=* subscribing
+INFO  2026-02-14T15:22:01 +1ms service=server status=started providers
+INFO  2026-02-14T15:22:01 +1ms service=provider status=started state
+INFO  2026-02-14T15:22:01 +5ms service=server status=completed duration=93 method=GET path=/event request
+INFO  2026-02-14T15:22:01 +0ms service=server status=completed duration=90 method=GET path=/config request
+INFO  2026-02-14T15:22:01 +2ms service=server status=completed duration=91 method=GET path=/session request
+INFO  2026-02-14T15:22:01 +15ms service=provider init
+INFO  2026-02-14T15:22:01 +14ms service=provider providerID=opencode found
+INFO  2026-02-14T15:22:01 +0ms service=provider status=completed duration=36 state
+INFO  2026-02-14T15:22:01 +23ms service=server status=completed duration=60 providers
+INFO  2026-02-14T15:22:01 +2ms service=server status=completed duration=146 method=GET path=/provider request
+INFO  2026-02-14T15:22:01 +0ms service=server status=completed duration=146 method=GET path=/config/providers request
+INFO  2026-02-14T15:22:01 +7ms service=server status=completed duration=153 method=GET path=/agent request
+INFO  2026-02-14T15:22:01 +73ms service=server method=GET path=/command request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/command request
+INFO  2026-02-14T15:22:01 +1ms service=server status=completed duration=1 method=GET path=/command request
+INFO  2026-02-14T15:22:01 +1ms service=server method=GET path=/lsp request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/lsp request
+INFO  2026-02-14T15:22:01 +0ms service=server status=completed duration=0 method=GET path=/lsp request
+INFO  2026-02-14T15:22:01 +1ms service=server method=GET path=/mcp request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-02-14T15:22:01 +0ms service=server status=completed duration=0 method=GET path=/mcp request
+INFO  2026-02-14T15:22:01 +1ms service=server method=GET path=/experimental/resource request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-02-14T15:22:01 +0ms service=server status=completed duration=0 method=GET path=/experimental/resource request
+INFO  2026-02-14T15:22:01 +0ms service=server method=GET path=/formatter request
+INFO  2026-02-14T15:22:01 +0ms service=server status=started method=GET path=/formatter request
+INFO  2026-02-14T15:22:02 +622ms service=server method=GET path=/session/status request
+INFO  2026-02-14T15:22:02 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-02-14T15:22:02 +0ms service=server status=completed duration=0 method=GET path=/session/status request
+INFO  2026-02-14T15:22:02 +0ms service=server method=GET path=/provider/auth request
+INFO  2026-02-14T15:22:02 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-02-14T15:22:02 +1ms service=server status=completed duration=1 method=GET path=/provider/auth request
+INFO  2026-02-14T15:22:02 +0ms service=server method=GET path=/vcs request
+INFO  2026-02-14T15:22:02 +0ms service=server status=started method=GET path=/vcs request
+INFO  2026-02-14T15:22:02 +0ms service=server status=completed duration=0 method=GET path=/vcs request
+INFO  2026-02-14T15:22:02 +1ms service=server method=GET path=/path request
+INFO  2026-02-14T15:22:02 +0ms service=server status=started method=GET path=/path request
+INFO  2026-02-14T15:22:02 +0ms service=server status=completed duration=0 method=GET path=/path request
+INFO  2026-02-14T15:22:03 +524ms service=server status=completed duration=1148 method=GET path=/formatter request
+INFO  2026-02-14T15:22:12 +9308ms service=server method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp request
+INFO  2026-02-14T15:22:12 +0ms service=server status=started method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp request
+INFO  2026-02-14T15:22:12 +3ms service=server url=http://opencode.internal/session/ses_3a382fc87ffe4QHt0X774S3bEp SEARCH
+INFO  2026-02-14T15:22:12 +1ms service=server status=completed duration=4 method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp request
+INFO  2026-02-14T15:22:12 +0ms service=server method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:22:12 +0ms service=server status=started method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:22:12 +36ms service=server status=completed duration=36 method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:22:12 +6ms service=server method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/todo request
+INFO  2026-02-14T15:22:12 +0ms service=server status=started method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/todo request
+INFO  2026-02-14T15:22:12 +2ms service=server status=completed duration=2 method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/todo request
+INFO  2026-02-14T15:22:12 +0ms service=server method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/diff request
+INFO  2026-02-14T15:22:12 +0ms service=server status=started method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/diff request
+INFO  2026-02-14T15:22:12 +2ms service=server status=completed duration=2 method=GET path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/diff request
+INFO  2026-02-14T15:31:38 +566483ms service=server method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:31:38 +1ms service=server status=started method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:31:39 +22ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:39 +5ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:39 +1ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:31:39 +4ms service=bus type=session.status publishing
+INFO  2026-02-14T15:31:39 +0ms service=session.prompt step=0 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:31:39 +8ms service=server status=completed duration=40 method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:31:39 +52ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:39 +1ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:31:39 +3ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:31:39 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:31:39 +1ms service=tool.registry status=started read
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:31:39 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=2 invalid
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=2 question
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=2 bash
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:31:39 +1ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:39 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:31:39 +0ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T15:31:39 +7ms service=session.prompt status=completed duration=13 resolveTools
+INFO  2026-02-14T15:31:39 +45ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:31:39 +3ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:39 +3ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:31:39 +1ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=true agent=title mode=primary stream
+INFO  2026-02-14T15:31:39 +1ms service=provider status=started providerID=opencode getSDK
+INFO  2026-02-14T15:31:39 +1ms service=provider providerID=opencode pkg=@ai-sdk/openai using bundled provider
+INFO  2026-02-14T15:31:39 +0ms service=provider status=completed duration=1 providerID=opencode getSDK
+INFO  2026-02-14T15:31:39 +46ms service=session.processor process
+INFO  2026-02-14T15:31:39 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:31:39 +0ms service=provider status=started providerID=opencode getSDK
+INFO  2026-02-14T15:31:39 +0ms service=provider providerID=opencode pkg=@ai-sdk/openai-compatible using bundled provider
+INFO  2026-02-14T15:31:39 +1ms service=provider status=completed duration=1 providerID=opencode getSDK
+INFO  2026-02-14T15:31:39 +58ms service=bus type=session.status publishing
+INFO  2026-02-14T15:31:41 +2094ms service=session.summary title=Minimal text: “si” refinement title
+INFO  2026-02-14T15:31:41 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:54 +13015ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:54 +5ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:54 +2ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:31:54 +520ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:31:55 +384ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +110ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +55ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +3ms service=bash-tool arg=/home/chier resolved=/home/chier resolved path
+INFO  2026-02-14T15:31:55 +5ms service=permission permission=bash pattern=zip -r aura-ai.zip aura-ai/ ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:55 +0ms service=permission permission=bash pattern=zip -r aura-ai.zip aura-ai/ action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:31:55 +6ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +94ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +8ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +12ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:55 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:55 +12ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:55 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:31:55 +0ms service=session.prompt step=1 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:31:55 +53ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:31:55 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:55 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:31:55 +5ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:55 +1ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:31:55 +1ms service=tool.registry status=started question
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:31:55 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:31:55 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=2 invalid
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=2 question
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 bash
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:31:55 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:55 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:55 +1ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:31:55 +0ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T15:31:55 +2ms service=session.prompt status=completed duration=5 resolveTools
+INFO  2026-02-14T15:31:55 +31ms service=session.processor process
+INFO  2026-02-14T15:31:55 +1ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:31:55 +40ms service=bus type=session.status publishing
+INFO  2026-02-14T15:31:59 +3650ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:31:59 +333ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:31:59 +6ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +201ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +0ms service=bash-tool arg=/home/chier resolved=/home/chier resolved path
+INFO  2026-02-14T15:31:59 +1ms service=permission permission=bash pattern=tar -czvf aura-ai.tar.gz aura-ai/ ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:31:59 +0ms service=permission permission=bash pattern=tar -czvf aura-ai.tar.gz aura-ai/ action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +5ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +45ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:31:59 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:59 +7ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:31:59 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:31:59 +0ms service=session.prompt step=2 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:00 +27ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:00 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:00 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:00 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:00 +0ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:32:00 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:32:00 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 invalid
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 question
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 bash
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:32:00 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:00 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=0 skill
+INFO  2026-02-14T15:32:00 +0ms service=tool.registry status=completed duration=1 task
+INFO  2026-02-14T15:32:00 +2ms service=session.prompt status=completed duration=2 resolveTools
+INFO  2026-02-14T15:32:00 +14ms service=session.processor process
+INFO  2026-02-14T15:32:00 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:32:00 +23ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:03 +3308ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:03 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:03 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:03 +397ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:03 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +1126ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +1ms service=bash-tool arg=/home/chier resolved=/home/chier resolved path
+INFO  2026-02-14T15:32:04 +0ms service=permission permission=bash pattern=python3 -c "import zipfile; z=zipfile.ZipFile('aura-ai.zip','w'); import os; [z.write(os.path.join(root,f), os.path.join('aura-ai',root,f)) for root,_,files in os.walk('aura-ai') for f in files]" ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:04 +0ms service=permission permission=bash pattern=python3 -c "import zipfile; z=zipfile.ZipFile('aura-ai.zip','w'); import os; [z.write(os.path.join(root,f), os.path.join('aura-ai',root,f)) for root,_,files in os.walk('aura-ai') for f in files]" action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:32:04 +0ms service=permission permission=bash pattern=ls -la aura-ai.zip ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:04 +0ms service=permission permission=bash pattern=ls -la aura-ai.zip action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:32:04 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +72ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:04 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:04 +7ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:04 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:04 +0ms service=session.prompt step=3 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:05 +33ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:05 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:05 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:05 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:05 +1ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:32:05 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:32:05 +1ms service=tool.registry status=completed duration=1 invalid
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 question
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 codesearch
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 bash
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:32:05 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:05 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:32:05 +0ms service=tool.registry status=completed duration=1 task
+INFO  2026-02-14T15:32:05 +1ms service=session.prompt status=completed duration=2 resolveTools
+INFO  2026-02-14T15:32:05 +23ms service=session.processor process
+INFO  2026-02-14T15:32:05 +1ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:32:05 +20ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:07 +2908ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:07 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:07 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:08 +289ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:08 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:08 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:08 +304ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:08 +107ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:08 +48ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:08 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:08 +7ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:08 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:08 +7ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:08 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:08 +0ms service=session.prompt step=4 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:08 +45ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:08 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:08 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:08 +0ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp exiting loop
+INFO  2026-02-14T15:32:08 +8ms service=session.compaction pruning
+INFO  2026-02-14T15:32:08 +5ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp cancel
+INFO  2026-02-14T15:32:08 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:08 +0ms service=bus type=session.idle publishing
+INFO  2026-02-14T15:32:08 +23ms service=session.compaction pruned=0 total=29162 found
+INFO  2026-02-14T15:32:20 +11830ms service=server method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:20 +0ms service=server status=started method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:20 +3ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:20 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:20 +0ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:20 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:20 +0ms service=session.prompt step=0 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:20 +2ms service=server status=completed duration=10 method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:20 +16ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:20 +0ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:32:20 +1ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:32:20 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:32:20 +1ms service=tool.registry status=started glob
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 invalid
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 question
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=0 glob
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=0 grep
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=0 edit
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=0 write
+INFO  2026-02-14T15:32:20 +1ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 codesearch
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=2 bash
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:32:20 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:20 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:32:20 +0ms service=tool.registry status=completed duration=1 task
+INFO  2026-02-14T15:32:20 +1ms service=session.prompt status=completed duration=4 resolveTools
+INFO  2026-02-14T15:32:20 +28ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:20 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:20 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:20 +0ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=true agent=title mode=primary stream
+INFO  2026-02-14T15:32:20 +4ms service=session.processor process
+INFO  2026-02-14T15:32:20 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:32:20 +14ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:21 +781ms service=session.summary title=Desktop PC setup in Windows prompt? title
+INFO  2026-02-14T15:32:21 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:24 +3081ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:24 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:24 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:24 +349ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:25 +308ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:25 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:25 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:25 +303ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:25 +308ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:26 +307ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:26 +315ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:26 +300ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:27 +320ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:27 +5ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:27 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:27 +22ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:27 +4ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:27 +6ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:27 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:27 +0ms service=session.prompt step=1 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:27 +26ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:27 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:27 +2ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:27 +0ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp exiting loop
+INFO  2026-02-14T15:32:27 +3ms service=session.compaction pruning
+INFO  2026-02-14T15:32:27 +3ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp cancel
+INFO  2026-02-14T15:32:27 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:27 +0ms service=bus type=session.idle publishing
+INFO  2026-02-14T15:32:27 +11ms service=session.compaction pruned=0 total=29162 found
+INFO  2026-02-14T15:32:43 +16721ms service=server method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:43 +0ms service=server status=started method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:43 +5ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:43 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:43 +1ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:43 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:43 +0ms service=session.prompt step=0 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:43 +2ms service=server status=completed duration=12 method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:32:43 +19ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:43 +0ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:32:43 +1ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:32:43 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:32:43 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 invalid
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 question
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 bash
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:32:43 +1ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:43 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:32:43 +0ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T15:32:43 +1ms service=session.prompt status=completed duration=4 resolveTools
+INFO  2026-02-14T15:32:43 +31ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:43 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:43 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:43 +0ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=true agent=title mode=primary stream
+INFO  2026-02-14T15:32:44 +10ms service=session.processor process
+INFO  2026-02-14T15:32:44 +1ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:32:44 +24ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:45 +1102ms service=session.summary title=Short text: "si" title
+INFO  2026-02-14T15:32:45 +3ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:47 +2048ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:47 +300ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:47 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +305ms service=permission permission=bash pattern=hostname -I ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:47 +0ms service=permission permission=bash pattern=hostname -I action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:32:47 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +7ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +40ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:47 +16ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:47 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:47 +0ms service=session.prompt step=1 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:47 +63ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:47 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:47 +0ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:32:47 +1ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:32:47 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 invalid
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 question
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 read
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 glob
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 grep
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 edit
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 write
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 webfetch
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 todowrite
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 bash
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=0 websearch
+INFO  2026-02-14T15:32:47 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:47 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:32:47 +1ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:32:47 +0ms service=tool.registry status=completed duration=1 task
+INFO  2026-02-14T15:32:47 +0ms service=session.prompt status=completed duration=2 resolveTools
+INFO  2026-02-14T15:32:47 +21ms service=session.processor process
+INFO  2026-02-14T15:32:47 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:32:47 +23ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:55 +7491ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:55 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:55 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:56 +735ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:56 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:56 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:56 +380ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:56 +306ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:57 +459ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:32:57 +57ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:57 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:57 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:32:57 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:57 +10ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:57 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:57 +0ms service=session.prompt step=2 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:32:57 +48ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:32:57 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:32:57 +2ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:32:57 +0ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp exiting loop
+INFO  2026-02-14T15:32:57 +5ms service=session.compaction pruning
+INFO  2026-02-14T15:32:57 +5ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp cancel
+INFO  2026-02-14T15:32:57 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:32:57 +0ms service=bus type=session.idle publishing
+INFO  2026-02-14T15:32:57 +19ms service=session.compaction pruned=0 total=29326 found
+INFO  2026-02-14T15:33:55 +57679ms service=server method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:33:55 +1ms service=server status=started method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:33:55 +5ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:33:55 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:33:55 +2ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:33:55 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T15:33:55 +0ms service=session.prompt step=0 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:33:55 +8ms service=server status=completed duration=19 method=POST path=/session/ses_3a382fc87ffe4QHt0X774S3bEp/message request
+INFO  2026-02-14T15:33:55 +29ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:33:55 +1ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:33:55 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started read
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:33:55 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 invalid
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 question
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 bash
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:33:55 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:33:55 +1ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:33:55 +0ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T15:33:55 +3ms service=session.prompt status=completed duration=5 resolveTools
+INFO  2026-02-14T15:33:55 +23ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:33:55 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:33:55 +2ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:33:55 +0ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=true agent=title mode=primary stream
+INFO  2026-02-14T15:33:55 +23ms service=session.processor process
+INFO  2026-02-14T15:33:55 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:33:55 +40ms service=bus type=session.status publishing
+INFO  2026-02-14T15:33:56 +1388ms service=session.summary title=SSH connection refused error troubleshooting title
+INFO  2026-02-14T15:33:56 +2ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:33:58 +1872ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:33:58 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:33:58 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:33:59 +479ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:33:59 +512ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:00 +616ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:00 +410ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:00 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +514ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +0ms service=bash-tool arg=/home/chier resolved=/home/chier resolved path
+INFO  2026-02-14T15:34:01 +1ms service=permission permission=bash pattern=python3 -m http.server 3001 ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:34:01 +0ms service=permission permission=bash pattern=python3 -m http.server 3001 action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-02-14T15:34:01 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:01 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:01 +7ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:01 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:34:01 +0ms service=session.prompt step=1 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:34:01 +36ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:34:01 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:01 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:34:01 +3ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:01 +0ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started question
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started bash
+INFO  2026-02-14T15:34:01 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T15:34:01 +1ms service=tool.registry status=started read
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started write
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started task
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started codesearch
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T15:34:01 +1ms service=tool.registry status=completed duration=2 invalid
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=2 question
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 codesearch
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=2 bash
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T15:34:01 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:34:01 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T15:34:01 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T15:34:01 +1ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T15:34:01 +3ms service=session.prompt status=completed duration=6 resolveTools
+INFO  2026-02-14T15:34:01 +20ms service=session.processor process
+INFO  2026-02-14T15:34:01 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a382fc87ffe4QHt0X774S3bEp small=false agent=build mode=primary stream
+INFO  2026-02-14T15:34:01 +14ms service=bus type=session.status publishing
+INFO  2026-02-14T15:34:05 +4101ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:05 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:05 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:05 +297ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T15:34:05 +11ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +3ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +2ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T15:34:05 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:05 +3ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:05 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:34:05 +0ms service=session.prompt step=2 sessionID=ses_3a382fc87ffe4QHt0X774S3bEp loop
+INFO  2026-02-14T15:34:05 +43ms service=bus type=session.updated publishing
+INFO  2026-02-14T15:34:05 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T15:34:05 +1ms service=bus type=session.diff publishing
+INFO  2026-02-14T15:34:05 +0ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp exiting loop
+INFO  2026-02-14T15:34:05 +3ms service=session.compaction pruning
+INFO  2026-02-14T15:34:05 +4ms service=session.prompt sessionID=ses_3a382fc87ffe4QHt0X774S3bEp cancel
+INFO  2026-02-14T15:34:05 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T15:34:05 +0ms service=bus type=session.idle publishing
+INFO  2026-02-14T15:34:05 +18ms service=session.compaction pruned=0 total=29326 found
