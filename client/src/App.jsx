@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { io } from 'socket.io-client'
 import './index.css'
 
-const API = '/api'
+const API = 'https://anotherworldsimulator.onrender.com/api'
 const socket = io()
 
 function App() {
