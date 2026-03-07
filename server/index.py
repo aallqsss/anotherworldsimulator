@@ -6,10 +6,12 @@ import bcrypt
 import jwt
 from datetime import datetime, timedelta
 from functools import wraps
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 import random
 
 app = Flask(__name__)
+CORS(app, origins=['https://anotherworldsimulator-1.onrender.com'])
 app.config['SECRET_KEY'] = 'another_world_secret_key_2024'
 
 DB_NAME = 'another_world.db'
