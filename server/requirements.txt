@@ -5,3 +5,4 @@ werkzeug
 bcrypt
 flask-socketio
 eventlet
+gunicorn
