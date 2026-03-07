@@ -4,7 +4,7 @@ import { io } from 'socket.io-client'
 import './index.css'
 
 const API = 'https://anotherworldsimulator.onrender.com/api'
-const socket = io()
+const socket = io('https://anotherworldsimulator.onrender.com')
 
 function App() {
   const [player, setPlayer] = React.useState(null)
