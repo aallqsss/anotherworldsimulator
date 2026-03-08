@@ -176,7 +176,7 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
   }
 
   const acceptDeal = async (dealId) => {
-    const res = await fetch(`${API}/npc-deals/${dealId}/accept`, { method: 'POST', headers: authHeaders() })
+    const res = await fetch(`${API}/npc-deals/` + dealId + `/accept`, { method: 'POST', headers: authHeaders() })
     if (res.ok) {
       refreshPlayer()
       fetchNpcDeals()
