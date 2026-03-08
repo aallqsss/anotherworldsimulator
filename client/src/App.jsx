@@ -170,13 +170,13 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
 
   const fetchNpcDeals = async () => {
     try {
-      const res = await fetch(`${API}/npc-deals', { headers: authHeaders() })
+      const res = await fetch('/api/npc-deals', { headers: authHeaders() })
       if (res.ok) setNpcDeals(await res.json())
     } catch {}
   }
 
   const acceptDeal = async (dealId) => {
-    const res = await fetch(`${API}/npc-deals/${dealId}/accept`, { method: 'POST', headers: authHeaders() })
+    const res = await fetch(`/api/npc-deals/${dealId}/accept`, { method: 'POST', headers: authHeaders() })
     if (res.ok) {
       refreshPlayer()
       fetchNpcDeals()
@@ -186,8 +186,8 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
   const fetchData = async () => {
     try {
       const [mRes, lRes] = await Promise.all([
-        fetch(`${API}/missions', { headers: authHeaders() }),
-        fetch(`${API}/leaderboard', { headers: authHeaders() })
+        fetch('/api/missions', { headers: authHeaders() }),
+        fetch('/api/leaderboard', { headers: authHeaders() })
       ])
       if (mRes.ok) setMissions(await mRes.json())
       if (lRes.ok) setLeaderboard(await lRes.json())
@@ -196,7 +196,7 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
 
   const fetchMessages = async () => {
     try {
-      const res = await fetch(`${API}/chat', { headers: authHeaders() })
+      const res = await fetch('/api/chat', { headers: authHeaders() })
       if (res.ok) setMessages(await res.json())
     } catch {}
   }
@@ -205,7 +205,7 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
     e.preventDefault()
     if (!msg.trim()) return
     try {
-      await fetch(`${API}/chat', {
+      await fetch('/api/chat', {
         method: 'POST',
         headers: { ...authHeaders(), 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: msg })
@@ -216,7 +216,7 @@ function HubPage({ authHeaders, refreshPlayer, setPage }) {
   }
 
   const claimMission = async (id) => {
-    const res = await fetch(`${API}/missions/${id}/claim`, { method: 'POST', headers: authHeaders() })
+    const res = await fetch(`/api/missions/${id}/claim`, { method: 'POST', headers: authHeaders() })
     if (res.ok) {
       refreshPlayer()
       fetchData()
@@ -325,7 +325,7 @@ function CollectionPage({ authHeaders }) {
   const loadCollection = async () => {
     setLoading(true)
     try {
-      const res = await fetch(`${API}/collection', { headers: authHeaders() })
+      const res = await fetch('/api/collection', { headers: authHeaders() })
       const data = await res.json()
       setCards(data)
     } catch (e) { console.error(e) }
@@ -333,7 +333,7 @@ function CollectionPage({ authHeaders }) {
   }
 
   const sellCard = async (cardId, quantity) => {
-    const res = await fetch(`${API}/sell-cards', {
+    const res = await fetch('/api/sell-cards', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ cardId, quantity })
@@ -443,14 +443,14 @@ function PacksPage({ authHeaders, refreshPlayer }) {
   const [welcomeClaimed, setWelcomeClaimed] = React.useState(null)
 
   React.useEffect(() => {
-    fetch(`${API}/welcome-pack/status', { headers: authHeaders() })
+    fetch('/api/welcome-pack/status', { headers: authHeaders() })
       .then(r => r.json())
       .then(d => setWelcomeClaimed(d.claimed))
       .catch(() => setWelcomeClaimed(true))
   }, [])
 
   const claimWelcome = async () => {
-    const res = await fetch(`${API}/welcome-pack', { method: 'POST', headers: authHeaders() })
+    const res = await fetch('/api/welcome-pack', { method: 'POST', headers: authHeaders() })
     if (res.ok) {
       const data = await res.json()
       setCards(data.cards)
@@ -468,7 +468,7 @@ function PacksPage({ authHeaders, refreshPlayer }) {
 
   const openPack = async (type) => {
     setError('')
-    const res = await fetch(`${API}/packs/open', {
+    const res = await fetch('/api/packs/open', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ packType: type })
@@ -560,8 +560,8 @@ function DecksPage({ authHeaders }) {
     setLoading(true)
     try {
       const [dRes, cRes] = await Promise.all([
-        fetch(`${API}/decks', { headers: authHeaders() }),
-        fetch(`${API}/collection', { headers: authHeaders() })
+        fetch('/api/decks', { headers: authHeaders() }),
+        fetch('/api/collection', { headers: authHeaders() })
       ])
       const d = await dRes.json()
       const c = await cRes.json()
@@ -573,7 +573,7 @@ function DecksPage({ authHeaders }) {
 
   const createDeck = async () => {
     if (!newDeckName.trim()) return
-    const res = await fetch(`${API}/decks', {
+    const res = await fetch('/api/decks', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: newDeckName, tcg: newDeckTcg, cardList: [] })
@@ -590,7 +590,7 @@ function DecksPage({ authHeaders }) {
     if (!deck) return
     
     const newList = [...(deck.card_list || []), cardId]
-    await fetch(`${API}/decks/${selectedDeck}`, {
+    await fetch(`/api/decks/${selectedDeck}`, {
       method: 'PUT',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: deck.name, cardList: newList })
@@ -607,7 +607,7 @@ function DecksPage({ authHeaders }) {
     if (idx > -1) {
       const newList = [...deck.card_list]
       newList.splice(idx, 1)
-      await fetch(`${API}/decks/${selectedDeck}`, {
+      await fetch(`/api/decks/${selectedDeck}`, {
         method: 'PUT',
         headers: { ...authHeaders(), 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: deck.name, cardList: newList })
@@ -619,7 +619,7 @@ function DecksPage({ authHeaders }) {
   const deleteDeck = async () => {
     if (!selectedDeck) return
     if (!confirm('Delete this deck?')) return
-    await fetch(`${API}/decks/${selectedDeck}`, { method: 'DELETE', headers: authHeaders() })
+    await fetch(`/api/decks/${selectedDeck}`, { method: 'DELETE', headers: authHeaders() })
     setSelectedDeck(null)
     loadData()
   }
@@ -719,8 +719,8 @@ function MarketPage({ authHeaders }) {
     setLoading(true)
     try {
       const [aRes, cRes] = await Promise.all([
-        fetch(`${API}/auctions', { headers: authHeaders() }),
-        fetch(`${API}/collection', { headers: authHeaders() })
+        fetch('/api/auctions', { headers: authHeaders() }),
+        fetch('/api/collection', { headers: authHeaders() })
       ])
       setAuctions(await aRes.json())
       setCollection((await cRes.json()).filter(c => c.owned > 0))
@@ -730,7 +730,7 @@ function MarketPage({ authHeaders }) {
 
   const createAuction = async () => {
     if (!listing.cardId || listing.price < 1) return
-    await fetch(`${API}/auctions', {
+    await fetch('/api/auctions', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ cardId: listing.cardId, startPrice: listing.price, duration: parseInt(listing.duration) })
@@ -742,7 +742,7 @@ function MarketPage({ authHeaders }) {
   const bid = async (auctionId, amount) => {
     const bidAmount = parseInt(amount)
     if (!bidAmount || bidAmount < 1) return
-    await fetch(`${API}/auctions/${auctionId}/bid`, {
+    await fetch(`/api/auctions/${auctionId}/bid`, {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ bid: bidAmount })
@@ -863,33 +863,33 @@ function ArenaPage() {
 
   const fetchTournaments = async () => {
     try {
-      const res = await fetch(`${API}/tournaments', { headers: authHeaders() })
+      const res = await fetch('/api/tournaments', { headers: authHeaders() })
       if (res.ok) setTournaments(await res.json())
     } catch {}
   }
 
   const fetchDecks = async () => {
     try {
-      const res = await fetch(`${API}/decks', { headers: authHeaders() })
+      const res = await fetch('/api/decks', { headers: authHeaders() })
       if (res.ok) setDecks(await res.json())
     } catch {}
   }
 
   const fetchOnlinePlayers = async () => {
     try {
-      const res = await fetch(`${API}/players/online', { headers: authHeaders() })
+      const res = await fetch('/api/players/online', { headers: authHeaders() })
       if (res.ok) setOnlinePlayers(await res.json())
     } catch {}
   }
 
   const joinTournament = async (tid) => {
-    const res = await fetch(`${API}/tournaments/${tid}/join`, { method: 'POST', headers: authHeaders() })
+    const res = await fetch(`/api/tournaments/${tid}/join`, { method: 'POST', headers: authHeaders() })
     if (res.ok) fetchTournaments()
   }
 
   const startDuel = async () => {
     if (!selectedDeck) return
-    const res = await fetch(`${API}/duel/start', {
+    const res = await fetch('/api/duel/start', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ deckId: selectedDeck })
@@ -902,7 +902,7 @@ function ArenaPage() {
   }
 
   const challengePlayer = async (playerId) => {
-    const res = await fetch(`${API}/duel/challenge/${playerId}`, {
+    const res = await fetch(`/api/duel/challenge/${playerId}`, {
       method: 'POST',
       headers: authHeaders()
     })
@@ -914,7 +914,7 @@ function ArenaPage() {
 
   const acceptChallenge = async () => {
     if (!challenge) return
-    const res = await fetch(`${API}/duel/accept/${challenge.duel_id}`, {
+    const res = await fetch(`/api/duel/accept/${challenge.duel_id}`, {
       method: 'POST',
       headers: authHeaders()
     })
@@ -929,7 +929,7 @@ function ArenaPage() {
 
   const startOnlineDuel = async () => {
     if (!selectedDeck) return
-    const res = await fetch(`${API}/duel/start-online', {
+    const res = await fetch('/api/duel/start-online', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ duelId: myDuelId, deckId: selectedDeck })
@@ -942,7 +942,7 @@ function ArenaPage() {
   }
 
   const playCard = async (cardIndex) => {
-    const res = await fetch(`${API}/duel/move', {
+    const res = await fetch('/api/duel/move', {
       method: 'POST',
       headers: { ...authHeaders(), 'Content-Type': 'application/json' },
       body: JSON.stringify({ duelId: myDuelId, cardIndex })
@@ -1142,7 +1142,7 @@ function ProfilePage({ player }) {
   const [achievements, setAchievements] = React.useState([])
 
   React.useEffect(() => {
-    fetch(`${API}/achievements', { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } })
+    fetch('/api/achievements', { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } })
       .then(r => r.json())
       .then(setAchievements)
   }, [])
