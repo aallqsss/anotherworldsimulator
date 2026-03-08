@@ -1,0 +1,183 @@
+INFO  2026-02-14T14:09:10 +120ms service=server method=GET path=/event request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/event request
+INFO  2026-02-14T14:09:10 +1ms service=default directory=/home/chier creating instance
+INFO  2026-02-14T14:09:10 +0ms service=project directory=/home/chier fromDirectory
+INFO  2026-02-14T14:09:10 +1ms service=server method=GET path=/session request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/session request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/config/providers request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/provider request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/agent request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-02-14T14:09:10 +1ms service=server method=GET path=/config request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/config request
+INFO  2026-02-14T14:09:10 +18ms service=db path=/home/chier/.local/share/opencode/opencode.db opening database
+INFO  2026-02-14T14:09:10 +1ms service=db count=3 mode=bundled applying migrations
+INFO  2026-02-14T14:09:10 +6ms service=default directory=/home/chier bootstrapping
+INFO  2026-02-14T14:09:10 +3ms service=config path=/home/chier/.config/opencode/config.json loading
+INFO  2026-02-14T14:09:10 +0ms service=config path=/home/chier/.config/opencode/opencode.json loading
+INFO  2026-02-14T14:09:10 +1ms service=config path=/home/chier/.config/opencode/opencode.jsonc loading
+INFO  2026-02-14T14:09:10 +8ms service=config path=/home/chier/.opencode/opencode.jsonc loading
+INFO  2026-02-14T14:09:10 +0ms service=config path=/home/chier/.opencode/opencode.json loading
+INFO  2026-02-14T14:09:10 +4ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-02-14T14:09:10 +0ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-02-14T14:09:10 +1ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-02-14T14:09:10 +0ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-02-14T14:09:10 +13ms service=bus type=* subscribing
+INFO  2026-02-14T14:09:10 +0ms service=bus type=session.updated subscribing
+INFO  2026-02-14T14:09:10 +0ms service=bus type=message.updated subscribing
+INFO  2026-02-14T14:09:10 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-02-14T14:09:10 +0ms service=bus type=session.diff subscribing
+INFO  2026-02-14T14:09:10 +0ms service=format init
+INFO  2026-02-14T14:09:10 +0ms service=bus type=file.edited subscribing
+INFO  2026-02-14T14:09:10 +1ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server enabled LSP servers
+INFO  2026-02-14T14:09:10 +1ms service=scheduler id=snapshot.cleanup run
+INFO  2026-02-14T14:09:10 +0ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-02-14T14:09:10 +0ms service=bus type=command.executed subscribing
+INFO  2026-02-14T14:09:10 +1ms service=server event connected
+INFO  2026-02-14T14:09:10 +2ms service=bus type=* subscribing
+INFO  2026-02-14T14:09:10 +1ms service=server status=started providers
+INFO  2026-02-14T14:09:10 +2ms service=provider status=started state
+INFO  2026-02-14T14:09:10 +4ms service=server status=completed duration=70 method=GET path=/event request
+INFO  2026-02-14T14:09:10 +0ms service=server status=completed duration=67 method=GET path=/config request
+INFO  2026-02-14T14:09:10 +0ms service=server status=completed duration=68 method=GET path=/session request
+INFO  2026-02-14T14:09:10 +15ms service=provider init
+INFO  2026-02-14T14:09:10 +9ms service=server status=completed duration=92 method=GET path=/agent request
+INFO  2026-02-14T14:09:10 +2ms service=provider providerID=opencode found
+INFO  2026-02-14T14:09:10 +0ms service=provider status=completed duration=30 state
+INFO  2026-02-14T14:09:10 +15ms service=server status=completed duration=47 providers
+INFO  2026-02-14T14:09:10 +2ms service=server status=completed duration=111 method=GET path=/provider request
+INFO  2026-02-14T14:09:10 +0ms service=server status=completed duration=111 method=GET path=/config/providers request
+INFO  2026-02-14T14:09:10 +60ms service=server method=GET path=/command request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/command request
+INFO  2026-02-14T14:09:10 +1ms service=server status=completed duration=1 method=GET path=/command request
+INFO  2026-02-14T14:09:10 +1ms service=server method=GET path=/lsp request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/lsp request
+INFO  2026-02-14T14:09:10 +0ms service=server status=completed duration=0 method=GET path=/lsp request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/mcp request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-02-14T14:09:10 +1ms service=server status=completed duration=1 method=GET path=/mcp request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/experimental/resource request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-02-14T14:09:10 +0ms service=server status=completed duration=0 method=GET path=/experimental/resource request
+INFO  2026-02-14T14:09:10 +0ms service=server method=GET path=/formatter request
+INFO  2026-02-14T14:09:10 +0ms service=server status=started method=GET path=/formatter request
+INFO  2026-02-14T14:09:11 +454ms service=server method=GET path=/session/status request
+INFO  2026-02-14T14:09:11 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-02-14T14:09:11 +0ms service=server status=completed duration=0 method=GET path=/session/status request
+INFO  2026-02-14T14:09:11 +0ms service=server method=GET path=/provider/auth request
+INFO  2026-02-14T14:09:11 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-02-14T14:09:11 +1ms service=server status=completed duration=1 method=GET path=/provider/auth request
+INFO  2026-02-14T14:09:11 +0ms service=server method=GET path=/vcs request
+INFO  2026-02-14T14:09:11 +0ms service=server status=started method=GET path=/vcs request
+INFO  2026-02-14T14:09:11 +1ms service=server status=completed duration=1 method=GET path=/vcs request
+INFO  2026-02-14T14:09:11 +0ms service=server method=GET path=/path request
+INFO  2026-02-14T14:09:11 +0ms service=server status=started method=GET path=/path request
+INFO  2026-02-14T14:09:11 +0ms service=server status=completed duration=0 method=GET path=/path request
+INFO  2026-02-14T14:09:11 +458ms service=server status=completed duration=913 method=GET path=/formatter request
+INFO  2026-02-14T14:09:23 +11812ms service=server method=POST path=/session request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=POST path=/session request
+INFO  2026-02-14T14:09:23 +1ms service=session id=ses_3a383e3edffeNsxk5FWHyfWV2d slug=shiny-canyon version=1.2.1 projectID=global directory=/home/chier title=New session - 2026-02-14T14:09:23.474Z time={"created":1771078163474,"updated":1771078163474} created
+INFO  2026-02-14T14:09:23 +1ms service=bus type=session.created publishing
+INFO  2026-02-14T14:09:23 +0ms service=bus type=session.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=server status=completed duration=3 method=POST path=/session request
+INFO  2026-02-14T14:09:23 +3ms service=server method=POST path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=POST path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +8ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=bus type=session.updated publishing
+INFO  2026-02-14T14:09:23 +4ms service=bus type=session.status publishing
+INFO  2026-02-14T14:09:23 +0ms service=session.prompt step=0 sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d loop
+INFO  2026-02-14T14:09:23 +1ms service=server status=completed duration=15 method=POST path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +4ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=session.prompt status=started resolveTools
+INFO  2026-02-14T14:09:23 +2ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d small=true agent=title mode=primary stream
+INFO  2026-02-14T14:09:23 +2ms service=provider status=started providerID=opencode getSDK
+INFO  2026-02-14T14:09:23 +0ms service=provider providerID=opencode pkg=@ai-sdk/openai using bundled provider
+INFO  2026-02-14T14:09:23 +0ms service=provider status=completed duration=1 providerID=opencode getSDK
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started invalid
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started question
+INFO  2026-02-14T14:09:23 +1ms service=tool.registry status=started bash
+INFO  2026-02-14T14:09:23 +0ms service=bash-tool shell=/bin/bash bash tool using shell
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started read
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started glob
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started grep
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started edit
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started write
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started task
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started webfetch
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started todowrite
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started websearch
+INFO  2026-02-14T14:09:23 +1ms service=tool.registry status=started codesearch
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=started skill
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=2 invalid
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=2 question
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 read
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 glob
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 grep
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 edit
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 write
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 webfetch
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 todowrite
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=0 codesearch
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=2 bash
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 websearch
+INFO  2026-02-14T14:09:23 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T14:09:23 +1ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/home/chier/.local/share/opencode/tool-output/*","action":"allow"}] evaluate
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=1 skill
+INFO  2026-02-14T14:09:23 +0ms service=tool.registry status=completed duration=2 task
+INFO  2026-02-14T14:09:23 +3ms service=session.prompt status=completed duration=10 resolveTools
+INFO  2026-02-14T14:09:23 +3ms service=bus type=session.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:23 +1ms service=llm providerID=opencode modelID=gpt-5-nano sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d small=true agent=title mode=primary stream
+INFO  2026-02-14T14:09:23 +13ms service=storage index=0 running migration
+INFO  2026-02-14T14:09:23 +4ms service=storage index=1 running migration
+INFO  2026-02-14T14:09:23 +8ms service=bus type=session.diff publishing
+INFO  2026-02-14T14:09:23 +3ms service=session.processor process
+INFO  2026-02-14T14:09:23 +0ms service=llm providerID=opencode modelID=big-pickle sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d small=false agent=build mode=primary stream
+INFO  2026-02-14T14:09:23 +0ms service=provider status=started providerID=opencode getSDK
+INFO  2026-02-14T14:09:23 +0ms service=provider providerID=opencode pkg=@ai-sdk/openai-compatible using bundled provider
+INFO  2026-02-14T14:09:23 +0ms service=provider status=completed duration=0 providerID=opencode getSDK
+INFO  2026-02-14T14:09:23 +3ms service=bus type=session.status publishing
+INFO  2026-02-14T14:09:23 +33ms service=server method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d request
+INFO  2026-02-14T14:09:23 +1ms service=server url=http://opencode.internal/session/ses_3a383e3edffeNsxk5FWHyfWV2d SEARCH
+INFO  2026-02-14T14:09:23 +0ms service=server status=completed duration=1 method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d request
+INFO  2026-02-14T14:09:23 +1ms service=server method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +1ms service=server status=completed duration=1 method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/message request
+INFO  2026-02-14T14:09:23 +0ms service=server method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/todo request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/todo request
+INFO  2026-02-14T14:09:23 +1ms service=server status=completed duration=1 method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/todo request
+INFO  2026-02-14T14:09:23 +0ms service=server method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/diff request
+INFO  2026-02-14T14:09:23 +0ms service=server status=started method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/diff request
+INFO  2026-02-14T14:09:23 +9ms service=server status=completed duration=9 method=GET path=/session/ses_3a383e3edffeNsxk5FWHyfWV2d/diff request
+INFO  2026-02-14T14:09:25 +1433ms service=bus type=session.updated publishing
+INFO  2026-02-14T14:09:25 +613ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:25 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:25 +1ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:25 +235ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:26 +171ms service=session.summary title=Text transcription and bug discussion thread title
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:26 +101ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:26 +240ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:26 +1ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:26 +226ms service=bus type=message.part.delta publishing
+INFO  2026-02-14T14:09:26 +48ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:26 +4ms service=bus type=message.part.updated publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:26 +3ms service=bus type=session.updated publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:26 +2ms service=bus type=session.diff publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=message.updated publishing
+INFO  2026-02-14T14:09:26 +1ms service=bus type=session.status publishing
+INFO  2026-02-14T14:09:26 +0ms service=session.prompt step=1 sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d loop
+INFO  2026-02-14T14:09:26 +0ms service=session.prompt sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d exiting loop
+INFO  2026-02-14T14:09:26 +2ms service=session.compaction pruning
+INFO  2026-02-14T14:09:26 +0ms service=session.prompt sessionID=ses_3a383e3edffeNsxk5FWHyfWV2d cancel
+INFO  2026-02-14T14:09:26 +0ms service=bus type=session.status publishing
+INFO  2026-02-14T14:09:26 +0ms service=bus type=session.idle publishing
+INFO  2026-02-14T14:09:26 +1ms service=session.compaction pruned=0 total=0 found

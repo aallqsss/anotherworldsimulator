@@ -1,0 +1,78 @@
+INFO  2026-02-14T15:07:01 +117ms service=server method=GET path=/event request
+INFO  2026-02-14T15:07:01 +0ms service=server status=started method=GET path=/event request
+INFO  2026-02-14T15:07:01 +0ms service=default directory=/home/chier creating instance
+INFO  2026-02-14T15:07:01 +1ms service=project directory=/home/chier fromDirectory
+INFO  2026-02-14T15:07:01 +0ms service=serveERROR 2026-02-14T15:07:03 +2200ms service=default e=setRawMode failed with errno: 5 exception
+ERROR 2026-02-14T15:07:03 +0ms service=default Error: setRawMode failed with errno: 5
+d=GET path=/config/providers request
+INFO  2026-02-14T15:07:01 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-02-14T15:07:01 +1ms service=server method=GET path=/provider request
+INFO  2026-02-14T15:07:01 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-02-14T15:07:01 +0ms service=server method=GET path=/agent request
+INFO  2026-02-14T15:07:01 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-02-14T15:07:01 +0ms service=server method=GET path=/config request
+INFO  2026-02-14T15:07:01 +0ms service=server status=started method=GET path=/config request
+INFO  2026-02-14T15:07:01 +20ms service=db path=/home/chier/.local/share/opencode/opencode.db opening database
+INFO  2026-02-14T15:07:01 +4ms service=db count=3 mode=bundled applying migrations
+INFO  2026-02-14T15:07:01 +8ms service=default directory=/home/chier bootstrapping
+INFO  2026-02-14T15:07:01 +7ms service=config path=/home/chier/.config/opencode/config.json loading
+INFO  2026-02-14T15:07:01 +0ms service=config path=/home/chier/.config/opencode/opencode.json loading
+INFO  2026-02-14T15:07:01 +0ms service=config path=/home/chier/.config/opencode/opencode.jsonc loading
+INFO  2026-02-14T15:07:01 +5ms service=config path=/home/chier/.opencode/opencode.jsonc loading
+INFO  2026-02-14T15:07:01 +0ms service=config path=/home/chier/.opencode/opencode.json loading
+INFO  2026-02-14T15:07:01 +5ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-02-14T15:07:01 +0ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-02-14T15:07:01 +0ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-02-14T15:07:01 +0ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-02-14T15:07:01 +62ms service=bus type=* subscribing
+INFO  2026-02-14T15:07:01 +0ms service=bus type=session.updated subscribing
+INFO  2026-02-14T15:07:01 +0ms service=bus type=message.updated subscribing
+INFO  2026-02-14T15:07:01 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-02-14T15:07:01 +0ms service=bus type=session.diff subscribing
+INFO  2026-02-14T15:07:01 +0ms service=format init
+INFO  2026-02-14T15:07:01 +0ms service=bus type=file.edited subscribing
+INFO  2026-02-14T15:07:01 +1ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server enabled LSP servers
+INFO  2026-02-14T15:07:01 +1ms service=scheduler id=snapshot.cleanup run
+INFO  2026-02-14T15:07:01 +0ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-02-14T15:07:01 +1ms service=bus type=command.executed subscribing
+INFO  2026-02-14T15:07:01 +1ms service=server event connected
+INFO  2026-02-14T15:07:01 +3ms service=bus type=* subscribing
+INFO  2026-02-14T15:07:01 +1ms service=server status=started providers
+INFO  2026-02-14T15:07:01 +3ms service=provider status=started state
+INFO  2026-02-14T15:07:02 +7ms service=server status=completed duration=131 method=GET path=/event request
+INFO  2026-02-14T15:07:02 +0ms service=server status=completed duration=129 method=GET path=/config request
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=131 method=GET path=/session request
+INFO  2026-02-14T15:07:02 +17ms service=provider init
+INFO  2026-02-14T15:07:02 +15ms service=provider providerID=opencode found
+INFO  2026-02-14T15:07:02 +0ms service=provider status=completed duration=40 state
+INFO  2026-02-14T15:07:02 +20ms service=server status=completed duration=63 providers
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=183 method=GET path=/provider request
+INFO  2026-02-14T15:07:02 +0ms service=server status=completed duration=184 method=GET path=/config/providers request
+INFO  2026-02-14T15:07:02 +9ms service=server status=completed duration=192 method=GET path=/agent request
+INFO  2026-02-14T15:07:02 +56ms service=server method=GET path=/command request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/command request
+INFO  2026-02-14T15:07:02 +2ms service=server status=completed duration=2 method=GET path=/command request
+INFO  2026-02-14T15:07:02 +1ms service=server method=GET path=/lsp request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/lsp request
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=1 method=GET path=/lsp request
+INFO  2026-02-14T15:07:02 +0ms service=server method=GET path=/mcp request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=1 method=GET path=/mcp request
+INFO  2026-02-14T15:07:02 +0ms service=server method=GET path=/experimental/resource request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=1 method=GET path=/experimental/resource request
+INFO  2026-02-14T15:07:02 +0ms service=server method=GET path=/formatter request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/formatter request
+INFO  2026-02-14T15:07:02 +549ms service=server method=GET path=/session/status request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-02-14T15:07:02 +0ms service=server status=completed duration=0 method=GET path=/session/status request
+INFO  2026-02-14T15:07:02 +1ms service=server method=GET path=/provider/auth request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-02-14T15:07:02 +0ms service=server status=completed duration=0 method=GET path=/provider/auth request
+INFO  2026-02-14T15:07:02 +0ms service=server method=GET path=/vcs request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/vcs request
+INFO  2026-02-14T15:07:02 +1ms service=server status=completed duration=1 method=GET path=/vcs request
+INFO  2026-02-14T15:07:02 +0ms service=server method=GET path=/path request
+INFO  2026-02-14T15:07:02 +0ms service=server status=started method=GET path=/path request
+INFO  2026-02-14T15:07:02 +0ms service=server status=completed duration=0 method=GET path=/path request
+INFO  2026-02-14T15:07:03 +513ms service=server status=completed duration=1064 method=GET path=/formatter request
