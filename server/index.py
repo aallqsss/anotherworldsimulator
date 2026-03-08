@@ -1,3 +1,5 @@
+import eventlet
+eventlet.monkey_patch()
 #!/usr/bin/env python3
 import sqlite3
 import json
